@@ -1,3 +1,14 @@
+
+
+## What I've done to my HexBot!
+
+So what I've done is created a PHP Application which converts the HEX Code into a name, based on Wikipedia names for Hex Colours, it takes the HEX Value and converts it to RGB and then works out which is the closest colour to the HEX and displays that.
+
+To set up, go to /public/ and refresh the page and you'll get a different colour and it will tell you its name! (Fun times)
+
+------------
+
+
 ![Hexbot](https://user-images.githubusercontent.com/212941/59163439-23c05900-8ab6-11e9-8764-977334c7bba8.png)
 
 # 👋 Meet Hexbot

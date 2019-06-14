@@ -1,0 +1,21 @@
+{
+	"name": "Colour Name Finder",
+    "description": "Finds and display a colour name.",
+    "authors": [
+        {
+            "name": "James Wilson",
+            "email": "james.wilson@cap2.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+	 "autoload": {
+	        "classmap": 
+	        [
+	        	"lib/"
+	        ]
+	    },
+    "require": {
+        "jenssegers/blade": "^1.1"
+    }
+
+}
