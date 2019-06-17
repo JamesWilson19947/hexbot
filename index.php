@@ -48,11 +48,9 @@ foreach ($photos->getArrayObject() as $image) {
 }
 
 
-$data['results'] = $photos->getArrayObject();
+$data['images'] = $image->urls;
 $data['colour'] = $name;
 $data['hex'] = $hex;
-
-print_r($data['results']);
 
 echo $blade->make('homepage')->with('data', $data);
 
