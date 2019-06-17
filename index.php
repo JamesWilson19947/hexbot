@@ -41,7 +41,9 @@ $per_page = 1;
 $orientation = 'landscape';
 $photos = Crew\Unsplash\Search::photos($search, $page, $per_page, $orientation);
 
-foreach ($photos as $photo) {
+$photoArray = [];
+
+foreach($photos as $photo) {
     $photoArray = [
         'author_url'  => $photo['user']['links']['html'],
         'author_name' => $photo['user']['username'],
