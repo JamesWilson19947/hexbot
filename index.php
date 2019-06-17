@@ -39,9 +39,21 @@ $search = $colour->returnName($hex);
 $page = 1;
 $per_page = 1;
 $orientation = 'landscape';
-$result = Crew\Unsplash\Search::photos($search, $page, $per_page, $orientation);
+$photos = Crew\Unsplash\Search::photos($search, $page, $per_page, $orientation);
 
-$data['image'] = $result->urls->regular();
+foreach ($photos as $photo) {
+    $photoArray = [
+        'author_url'  => $photo['user']['links']['html'],
+        'author_name' => $photo['user']['username'],
+        'source_url'  => $photo['links']['html'],
+        'src'         => $photo['urls']['thumb'],
+        'width'       => 200,
+        'height'      => 200 * $photo['height'] / $photo['width'],
+        'download'    => $photo['links']['download'],
+    ];
+}
+
+$data['image'] = $photoArray['source_url'];
 $data['colour'] = $colour->returnName($hex);
 $data['hex'] = $hex;
 
