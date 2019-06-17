@@ -7,7 +7,7 @@
 <center>
   <h1>Colour:  {{ $data['hex'] }} </h1>
   <h1>Name: {{ $data['colour'] }}</h1>
-    <img src="{{ $data['images']['regular'] }}">
+    <img src="{{ $data['images']['regular'] }}"" width="500" height="auto">
 </center>
 
 
