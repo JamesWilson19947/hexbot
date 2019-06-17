@@ -14,7 +14,7 @@
 
 <style>
   body{
-    background-color: {{ $data['colour'] }};
+    background-color: {{ $data['hex'] }};
   }
 
   h1 {
