@@ -15,7 +15,9 @@
 	        ]
 	    },
     "require": {
-        "jenssegers/blade": "^1.1"
+        "jenssegers/blade": "^1.1",
+		"unsplash/unsplash": "^2.4",
+		"vlucas/phpdotenv": "^3.4"
     }
 
 }

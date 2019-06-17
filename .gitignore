@@ -1,3 +1,4 @@
+.env
 composer.phar
 /vendor/
 
@@ -71,3 +72,5 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+cache/1a18700cc938ca58cfc2353ade01e041f7230feb.php
+cache/e5747e4521479ca79856cbfe880e2d5b2b5bf4a6.php
