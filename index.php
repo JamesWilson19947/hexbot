@@ -41,10 +41,7 @@ $per_page = 1;
 $orientation = 'landscape';
 $result = Crew\Unsplash\Search::photos($search, $page, $per_page, $orientation);
 
-
-print_r($result);
-
-
+$data['image'] = $result->urls->regular();
 $data['colour'] = $colour->returnName($hex);
 $data['hex'] = $hex;
 

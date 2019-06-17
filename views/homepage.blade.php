@@ -7,7 +7,12 @@
 <center>
   <h1>Colour:  {{ $data['hex'] }} </h1>
   <h1>Name: {{ $data['colour'] }}</h1>
+    <img src="{{ $data['image']}}" alt="Smiley face" height="42" width="42">
+
+
 </center>
+
+
 
 <style>
   body{
