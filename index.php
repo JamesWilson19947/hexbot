@@ -47,11 +47,7 @@ foreach ($photos->getArrayObject() as $image) {
     $image->user = (array)$image->user;
 }
 
-print_r($image->urls);
-
-print_r($data['results'] = $search->getArrayObject());
-
-$data['image'] = $photoArray['source_url'];
+$data['image'] = $data['results']['regular'];
 $data['colour'] = $colour->returnName($hex);
 $data['hex'] = $hex;
 
