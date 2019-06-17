@@ -5,8 +5,8 @@ use Jenssegers\Blade\Blade;
 # Load Composer
 require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::create(__DIR__);
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::create(__DIR__);
+// $dotenv->load();
 $blade = new Blade('views', 'cache');
 
 $json = file_get_contents("http://api.noopschallenge.com/hexbot");
