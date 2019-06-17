@@ -14,11 +14,11 @@
 
 <style>
   body{
-    background-color: {{ $data['image_colour'] }};
+    background-color: {{ $data['colour'] }};
   }
 
   h1 {
-    color: #fff;
+    color: {{ $data['image_colour'] }};
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
