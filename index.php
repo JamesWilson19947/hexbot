@@ -31,11 +31,11 @@ $hex = $data['colors'][0]['value'];
 
 
 $colour = new Colour\ColourFind;
-
+$name = $colour->returnName($hex);
 
 $data = [];
 
-$search = $colour->returnName($hex);
+$search = $name;
 $page = 1;
 $per_page = 1;
 $orientation = 'landscape';
@@ -47,9 +47,12 @@ foreach ($photos->getArrayObject() as $image) {
     $image->user = (array)$image->user;
 }
 
+
 $data['results'] = $photos->getArrayObject();
-$data['colour'] = $colour->returnName($hex);
+$data['colour'] = $name;
 $data['hex'] = $hex;
+
+print_r($data['results']);
 
 echo $blade->make('homepage')->with('data', $data);
 
