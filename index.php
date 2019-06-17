@@ -47,7 +47,7 @@ foreach ($photos->getArrayObject() as $image) {
     $image->user = (array)$image->user;
 }
 
-$data['results'] = $search->getArrayObject();
+$data['results'] = $photos->getArrayObject();
 $data['colour'] = $colour->returnName($hex);
 $data['hex'] = $hex;
 
